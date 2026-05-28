@@ -1,6 +1,6 @@
-# 💬 QuickChat — Real-Time MERN Chat Application
+# 🗪 QuickChat — Real-Time MERN Chat Application
 
-A production-quality, real-time chat application built with the **MERN stack** and **Socket.IO**, featuring a beautiful glassmorphism UI with sky-blue aesthetics.
+A production-quality, real-time chat application built with the **MERN stack** and **Socket.IO**, featuring a beautiful glassmorphism UI.
 
 ---
 
@@ -51,7 +51,7 @@ A production-quality, real-time chat application built with the **MERN stack** a
 ## 📁 Folder Structure
 
 ```
-chat-app/
+QuickChat/
 ├── backend/
 │   ├── config/
 │   │   └── db.js                 # MongoDB connection
