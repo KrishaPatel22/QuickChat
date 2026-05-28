@@ -251,11 +251,21 @@ NODE_ENV=development
 
 ## 📸 Screenshots
 
-> Add screenshots here after running the app.
-> 
-> - `screenshots/landing.png` — Landing page
-> - `screenshots/chat.png` — Chat dashboard
-> - `screenshots/mobile.png` — Mobile view
+> Screenshots are here after running the app.
+
+— Landing page
+<img width="1919" height="829" alt="image" src="https://github.com/user-attachments/assets/b62a3191-faa2-4916-9843-aa03fb7255b6" />
+
+— Login Page
+<img width="1919" height="822" alt="image" src="https://github.com/user-attachments/assets/62d97347-4d76-428b-b623-e07e9d7fbd3e" />
+
+— Chat Page
+<img width="1919" height="822" alt="image" src="https://github.com/user-attachments/assets/4fb8e126-b4a6-4319-983a-53b875f9e167" />
+
+— Chat Window
+<img width="1169" height="782" alt="image" src="https://github.com/user-attachments/assets/84a81f4e-44f5-4ff2-b6df-8f05c42cc6ff" />
+
+
 
 ---
 
