@@ -254,18 +254,16 @@ NODE_ENV=development
 > Screenshots are here after running the app.
 
 — Landing page
-<img width="1919" height="829" alt="image" src="https://github.com/user-attachments/assets/b62a3191-faa2-4916-9843-aa03fb7255b6" />
+<img width="1919" height="829" alt="Screenshot 2026-05-30 103315" src="https://github.com/user-attachments/assets/65a4c04c-091d-45a2-b56f-586da4f6f910" />
 
 — Login Page
-<img width="1919" height="822" alt="image" src="https://github.com/user-attachments/assets/62d97347-4d76-428b-b623-e07e9d7fbd3e" />
+<img width="1919" height="826" alt="image" src="https://github.com/user-attachments/assets/2749e97b-0907-4803-9583-a5146e4823c2" />
 
 — Chat Page
-<img width="1919" height="822" alt="image" src="https://github.com/user-attachments/assets/4fb8e126-b4a6-4319-983a-53b875f9e167" />
+<img width="1919" height="827" alt="image" src="https://github.com/user-attachments/assets/28bd87db-43e8-4c6d-a4bc-c696a705fd6b" />
 
 — Chat Window
-<img width="1169" height="782" alt="image" src="https://github.com/user-attachments/assets/84a81f4e-44f5-4ff2-b6df-8f05c42cc6ff" />
-
-
+<img width="1559" height="787" alt="image" src="https://github.com/user-attachments/assets/77fc3d70-dd68-45ed-92ed-36a674344c0c" />
 
 ---
 
