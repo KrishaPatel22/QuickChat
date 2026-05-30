@@ -58,10 +58,10 @@ export default function ChatWindow() {
           transition={{ type: "spring", stiffness: 200 }}
         >
           <div className="text-7xl mb-6 drop-shadow-lg">💬</div>
-          <h2 className="text-2xl font-bold text-sky-500 mb-2">
+          <h2 className="text-2xl font-bold text-navy-500 mb-2">
             Start a Conversation
           </h2>
-          <p className="text-sky-600">
+          <p className="text-navy-600">
             Select a user from the sidebar to begin chatting
           </p>
         </motion.div>
@@ -77,17 +77,17 @@ export default function ChatWindow() {
           <img
             src={selectedUser.avatar || `https://api.dicebear.com/7.x/avataaars/svg?seed=${selectedUser.username}`}
             alt={selectedUser.username}
-            className="w-10 h-10 rounded-full border-2 border-sky-700"
+            className="w-10 h-10 rounded-full border-2 border-navy-700"
           />
           {isOnline && (
             <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-green-400 rounded-full border-2 border-white" />
           )}
         </div>
         <div>
-          <div className="font-bold text-sky-500">{selectedUser.username}</div>
-          <div className={`text-xs ${isOnline ? "text-green-300" : "text-sky-700"}`}>
+          <div className="font-bold text-navy-500">{selectedUser.username}</div>
+          <div className={`text-xs ${isOnline ? "text-green-300" : "text-navy-700"}`}>
             {isTyping ? (
-              <span className="text-sky-600 animate-pulse">typing...</span>
+              <span className="text-navy-600 animate-pulse">typing...</span>
             ) : isOnline ? (
               "● Online"
             ) : (
@@ -107,7 +107,7 @@ export default function ChatWindow() {
               className="text-center text-white/50"
             >
               <div className="text-4xl mb-2">👋</div>
-              <p className="text-sm text-sky-600">
+              <p className="text-sm text-navy-600">
                 Say hi to {selectedUser.username}!
               </p>
             </motion.div>
@@ -174,7 +174,7 @@ export default function ChatWindow() {
             onChange={handleInputChange}
             onKeyDown={(e) => e.key === "Enter" && !e.shiftKey && handleSend(e)}
             placeholder={`Message ${selectedUser.username}...`}
-            className="input-glass flex-1 text-sky-900 text-sm"
+            className="input-glass flex-1 text-navy-900 text-sm"
           />
 
           {/* Send button */}

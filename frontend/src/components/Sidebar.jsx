@@ -65,7 +65,7 @@ export default function Sidebar({ onClose }) {
       {/* Header */}
       <div className="glass border-b border-white/20 p-4">
         <div className="flex items-center justify-between mb-3">
-          <h1 className="text-xl font-bold text-sky-600 drop-shadow">
+          <h1 className="text-xl font-bold text-navy-600 drop-shadow">
             🗪 QuickChat
           </h1>
           <button
@@ -75,7 +75,7 @@ export default function Sidebar({ onClose }) {
             <img
               src={user?.avatar || `https://api.dicebear.com/7.x/avataaars/svg?seed=${user?.username}`}
               alt={user?.username}
-              className="w-9 h-9 rounded-full border-2 border-sky-700 hover:border-sky-400 transition-all cursor-pointer"
+              className="w-9 h-9 rounded-full border-2 border-navy-700 hover:border-navy-400 transition-all cursor-pointer"
             />
             <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-green-400 rounded-full border-2 border-white online-pulse" />
           </button>
@@ -94,11 +94,11 @@ export default function Sidebar({ onClose }) {
                 <img
                   src={user?.avatar || `https://api.dicebear.com/7.x/avataaars/svg?seed=${user?.username}`}
                   alt={user?.username}
-                  className="w-12 h-12 rounded-full border-2 border-sky-700"
+                  className="w-12 h-12 rounded-full border-2 border-navy-700"
                 />
                 <div>
-                  <div className="font-bold text-sky-500">{user?.username}</div>
-                  <div className="text-sky-600 text-xs">{user?.email}</div>
+                  <div className="font-bold text-navy-500">{user?.username}</div>
+                  <div className="text-navy-600 text-xs">{user?.email}</div>
                   <div className="text-green-500 text-xs flex items-center gap-1 mt-0.5">
                     <span className="w-1.5 h-1.5 bg-green-500 rounded-full" />
                     Online
@@ -121,7 +121,7 @@ export default function Sidebar({ onClose }) {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="🔍 Search users..."
-          className="input-glass text-sky-900 text-sm"
+          className="input-glass text-navy-900 text-sm"
         />
       </div>
 
@@ -130,7 +130,7 @@ export default function Sidebar({ onClose }) {
         {loading ? (
           Array.from({ length: 5 }).map((_, i) => <UserSkeleton key={i} />)
         ) : users.length === 0 ? (
-          <div className="text-center text-sky-600 py-10 text-sm">
+          <div className="text-center text-navy-600 py-10 text-sm">
             {search ? "No users found 🔍" : "No other users yet 👤"}
           </div>
         ) : (
@@ -147,7 +147,7 @@ export default function Sidebar({ onClose }) {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.05 }}
                   onClick={() => handleSelectUser(u)}
-                  className={`flex items-center gap-3 mx-2 p-3 rounded-xl cursor-pointer transition-all duration-200 border border-sky-700 ${
+                  className={`flex items-center gap-3 mx-2 p-3 rounded-xl cursor-pointer transition-all duration-200 border border-navy-700 ${
                     isSelected
                       ? "bg-white/40 shadow-lg"
                       : "hover:bg-white/20"
@@ -158,26 +158,26 @@ export default function Sidebar({ onClose }) {
                     <img
                       src={u.avatar || `https://api.dicebear.com/7.x/avataaars/svg?seed=${u.username}`}
                       alt={u.username}
-                      className="w-10 h-10 rounded-full border-2 border-sky-700"
+                      className="w-10 h-10 rounded-full border-2 border-navy-700"
                     />
                     {online && (
-                      <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-green-500 rounded-full border-2 border-sky-400 online-pulse" />
+                      <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-green-500 rounded-full border-2 border-navy-400 online-pulse" />
                     )}
                   </div>
 
                   {/* Name & status */}
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between">
-                      <span className="font-semibold text-sky-600 text-sm truncate">
+                      <span className="font-semibold text-navy-600 text-sm truncate">
                         {u.username}
                       </span>
                       {unread > 0 && (
-                        <span className="bg-sky-800 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold flex-shrink-0">
+                        <span className="bg-navy-800 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold flex-shrink-0">
                           {unread > 9 ? "9+" : unread}
                         </span>
                       )}
                     </div>
-                    <span className={`text-xs ${online ? "text-green-500" : "text-sky-800"}`}>
+                    <span className={`text-xs ${online ? "text-green-500" : "text-navy-800"}`}>
                       {online ? "● Online" : "○ Offline"}
                     </span>
                   </div>
@@ -189,8 +189,8 @@ export default function Sidebar({ onClose }) {
       </div>
 
       {/* Footer */}
-      <div className="glass border-t border-sky-200/20 p-3 text-center">
-        <p className="text-sky-600 text-s">
+      <div className="glass border-t border-navy-200/20 p-3 text-center">
+        <p className="text-navy-600 text-s">
           {onlineUsers.length} user{onlineUsers.length !== 1 ? "s" : ""} online
         </p>
       </div>

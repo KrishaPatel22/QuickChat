@@ -24,7 +24,7 @@ export default function MessageBubble({ message, isMine }) {
               `https://api.dicebear.com/7.x/avataaars/svg?seed=${message.sender?.username}`
         }
         alt={message.sender?.username}
-        className="w-7 h-7 rounded-full border-2 border-sky-700 flex-shrink-0 mb-1"
+        className="w-7 h-7 rounded-full border-2 border-navy-700 flex-shrink-0 mb-1"
       />
 
       {/* Bubble */}
@@ -36,7 +36,7 @@ export default function MessageBubble({ message, isMine }) {
         >
           {message.content}
         </div>
-        <span className="text-sky-800 text-xs mt-1 px-1">
+        <span className="text-navy-800 text-xs mt-1 px-1">
           {formatTime(message.createdAt)}
           {isMine && (
             <span className="ml-1" title={message.isRead ? "Read" : "Delivered"}>

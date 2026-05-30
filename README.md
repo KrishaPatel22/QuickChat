@@ -23,7 +23,7 @@ A production-quality, real-time chat application built with the **MERN stack** a
 - Emoji picker integration
 
 ### 🎨 UI/UX
-- Glassmorphism design with sky-blue palette
+- Glassmorphism design with navy-navy palette
 - Fully responsive (mobile + desktop)
 - Mobile sidebar drawer with smooth transitions
 - Framer Motion animations throughout

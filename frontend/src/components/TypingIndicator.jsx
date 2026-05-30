@@ -11,7 +11,7 @@ export default function TypingIndicator({ username }) {
       className="flex items-end gap-2 mb-2"
     >
       <div className="msg-received px-4 py-3 flex items-center gap-1.5">
-        <span className="text-xs text-sky-500 mr-1">{username}</span>
+        <span className="text-xs text-navy-500 mr-1">{username}</span>
         <div className="typing-dot" />
         <div className="typing-dot" />
         <div className="typing-dot" />

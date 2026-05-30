@@ -38,7 +38,7 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center p-4">
       {/* Background blobs */}
       <div className="absolute top-1/4 left-1/4 w-72 h-72 rounded-full bg-white/10 blur-3xl" />
-      <div className="absolute bottom-1/4 right-1/4 w-72 h-72 rounded-full bg-sky-800/20 blur-3xl" />
+      <div className="absolute bottom-1/4 right-1/4 w-72 h-72 rounded-full bg-navy-800/20 blur-3xl" />
 
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
@@ -48,15 +48,15 @@ export default function LoginPage() {
       >
         {/* Header */}
         <div className="text-center mb-8">
-          <div className="text-4xl mb-3 bg-gradient-to-br from-sky-700 via-sky-500 to-white bg-clip-text text-transparent drop-shadow-lg"> 🗪 </div>
-          <h1 className="text-3xl font-bold text-sky-700">Welcome Back</h1>
-          <p className="text-sky-600 mt-2">Sign in to continue chatting</p>
+          <div className="text-4xl mb-3 bg-gradient-to-br from-navy-700 via-navy-500 to-white bg-clip-text text-transparent drop-shadow-lg"> 🗪 </div>
+          <h1 className="text-3xl font-bold text-navy-700">Welcome Back</h1>
+          <p className="text-navy-600 mt-2">Sign in to continue chatting</p>
         </div>
 
         {/* Form */}
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-sky-600 text-sm font-medium mb-1">
+            <label className="block text-navy-600 text-sm font-medium mb-1">
               Email
             </label>
             <input
@@ -65,13 +65,13 @@ export default function LoginPage() {
               value={form.email}
               onChange={handleChange}
               placeholder="you@example.com"
-              className="input-glass text-sky-900 font-medium"
+              className="input-glass text-navy-900 font-medium"
               required
             />
           </div>
 
           <div>
-            <label className="block text-sky-600 text-sm font-medium mb-1">
+            <label className="block text-navy-600 text-sm font-medium mb-1">
               Password
             </label>
             <input
@@ -80,7 +80,7 @@ export default function LoginPage() {
               value={form.password}
               onChange={handleChange}
               placeholder="••••••••"
-              className="input-glass text-sky-900 font-medium"
+              className="input-glass text-navy-900 font-medium"
               required
             />
           </div>
@@ -105,17 +105,17 @@ export default function LoginPage() {
         </form>
 
         <div className="text-center mt-6">
-          <span className="text-sky-600">Don't have an account? </span>
+          <span className="text-navy-600">Don't have an account? </span>
           <Link
             to="/signup"
-            className="text-sky-600 font-semibold hover:text-sky-400 transition-colors underline underline-offset-2"
+            className="text-navy-600 font-semibold hover:text-navy-400 transition-colors underline underline-offset-2"
           >
             Sign Up
           </Link>
         </div>
 
         <div className="text-center mt-4">
-          <Link to="/" className="text-sky-600 text-sm hover:text-sky-700 transition-colors">
+          <Link to="/" className="text-navy-600 text-sm hover:text-navy-700 transition-colors">
             ← Back to home
           </Link>
         </div>
